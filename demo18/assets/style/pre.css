@@ -1,0 +1,27 @@
+:root {
+    --left-col:781px;
+    --right-col:380px;
+    --black-text:#212121;
+    --grey-text:#B5B5C3;
+}
+.my-btn {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--grey-text);
+    border-radius: 9px;
+}
+.text-black {
+    color: #212121;
+}
+.text-grey {
+    color: #B5B5C3;
+}
+a {
+    text-decoration: none;
+}
+button {
+    font-family: "Poppins";
+    font-size: 16px;
+}
