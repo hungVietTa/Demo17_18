@@ -243,44 +243,33 @@ body {
     width: 710px;
 }
 .billboard-section {
-    padding: 49px 40px 48px;
-    height: 237px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    overflow: hidden;
-    background-color: #B4DE09;
+    padding: 49px 40px;
+    background-image: url("../img/billboard2.png");
+    background-position: center;
     border-radius: 12px;
+    line-height: 38px;
 }
 .billboard-section h2 {
     font-weight:600;
     font-size: 28px;
-}
-.billboard-section img {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 20%;
-    transform: translateX(20%);
+    margin-bottom: 22px;
 }
 .billboard-link {
     color: white;
     padding: 12px 20px;
     background-color: #3F4254;
     border-radius: 12px;
+    line-height: 18px;
     font-weight: 500;
     font-size: 15px;
-    display: block;
+    display: inline-block;
+    font-family: 'Roboto';
 }
 .trend-properties{
-    margin-top: 20px;
+    padding-top: 30px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
-.trend,.wrapper-right-statistics-properties {
+.trend,.properties {
     width: 48%;
     background-color: white;
     padding: 20px;
@@ -288,20 +277,25 @@ body {
 }
 .trend-section {
     background-color: white;
+    width: calc((100% - 30px)/2);
 }
-.trend-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.trend-section .section-heading-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
 }
-
 .trend-chart {
-    margin-top: 20px;
+    padding-top: 41px;
     width: 100%;
     display: block;
+    object-fit: cover;
+}
+.trend-content {
+    display: flex;
+    flex-direction: column;
 }
 .trend-item {
-    margin-bottom: 20px;
+    width: 100%;
 }
 .trend-item img {
     width: 50px;
@@ -309,105 +303,130 @@ body {
 }
 .trend-bonus {
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 20px;
     color: #7E8299;
     background-color: #F3F6F9;
     margin-left: auto;
-    padding: 5px 5px;
+    padding: 5px 4px;
     border-radius: 9px;
     display: block;
 }
-.wrapper-right-statistics-properties-item img {
-    width: 60px;
+.properties-section {
+    background-color: white;
+    width: calc((100% - 30px)/2);
+}
+.properties-section .section-heading-title {
+    font-size: 17px;
+    line-height: 26px;
+}
+.properties-content {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.properties-item>img {
     margin-right: 15px;
 }
-.wrapper-right-statistics-properties-arrow {
-    font-size: 13px;
-    font-weight: bold;
-    color: #7E8299;
-    background-color: #F3F6F9;
-    margin-left: auto;
-    padding: 5px 10px;
+.properties-arrow {
     border-radius: 9px;
     display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
-.wrapper-right-statistics-new-arrivals {
-    width: 100%;
-    margin-top: 25px;
+.properties-arrow img{
+    width: 26px;
+    height: 26px;
+}
+.new-arrivals-section {
+    margin-top: 30px;
     padding: 25px 25px;
     background-color: white;
     border-radius: 12px;
 }
-.wrapper-right-statistics-new-arrivals-heading {
+.new-arrivals-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
-.wrapper-right-statistics-new-arrivals-heading-title span{
+.new-arrivals-section .section-heading-title {
+    padding-bottom: 7px;
+}
+.new-arrivals-heading-title span{
     color: #7E8299;
 }
-.wrapper-right-statistics-new-arrivals-heading-button a{
-    color: #7E8299;
-    padding: 10px 15px;
-    border-radius: 9px;
+.new-arrivals-heading-buttons a{
+    color: #B5B5C3;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 6px;
 }
-.wrapper-right-statistics-new-arrivals-heading-button a.active {
-    background-color: 3F4254;
+.new-arrivals-heading-buttons a.active {
+    background-color: #3F4254;
     color: white;
 }
-.wrapper-right-statistics-new-arrivals-item {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+.new-arrivals-content {
+    padding-top: 24px;
 }
-.wrapper-right-statistics-new-arrivals-item p {
-    margin:0;
-    color: #3F4254;
-    font-weight: bolder;
-}
-.wrapper-right-statistics-new-arrivals-item-left {
+.new-arrivals-item  {
+    width: 100%;
     display: flex;
     align-items: center;
-    width: 50%;
+    gap: 66px;
 }
-.wrapper-right-statistics-new-arrivals-item-left p{
-    margin-bottom: 10px;
+.new-arrivals-stats {
+    display: flex;
+    align-items: center;
+    width: 360px;
 }
-.wrapper-right-statistics-new-arrivals-item-left span {
-    color: #B5B5C3;
+.new-arrivals-stats span{
+    font-size: 13px;
+    line-height: 20px;
 }
-.wrapper-right-statistics-new-arrivals-item-left strong {
+.new-arrivals-stats>img {
+    margin-right: 15px;
+}
+.new-arrivals-stats strong {
     color: #3F4254;
 }
-.wrapper-right-statistics-new-arrivals-item-left-text {
+.new-arrivals-stats-text {
     margin-left: 10px;
 } 
-.wrapper-right-statistics-new-arrivals-item-left-price {
+.new-arrivals-stats-price {
     margin-left: auto;
 } 
-.wrapper-right-statistics-new-arrivals-item-right {
+.new-arrivals-status {
+    width: 20%;
+}
+.new-arrivals-controls {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 43%;
+    width: calc((100% - 66px)/2);
+    gap: 66px;
 }
-.wrapper-right-statistics-new-arrivals-item-right-button {
-    margin-right: auto;
+.new-arrivals-controls-button {
+    font-size: 11px;
+    line-height: 16px;
+    margin-left: auto;
     padding: 5px 10px;
-    color: indigo;
-    background-color:#F1F4F8;
     border-radius: 9px;
     font-weight: bolder;
 }
-.wrapper-right-statistics-new-arrivals-item-right-icon {
-    margin-left: 15px;
+.new-arrivals-controls-icons {
+    display: flex;
+    gap: 10px;
+}
+.new-arrivals-controls-icons a {
     display: block;
-    padding: 10px;
+    padding: 7px;
     background-color:#F1F4F8;
     border-radius: 9px;
 }
-.wrapper-right-statistics-new-arrivals-item-right-icon img{
+.new-arrivals-controls-icon img{
     width: 18px;
 }
 a:hover {

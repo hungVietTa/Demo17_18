@@ -24,6 +24,7 @@ a:hover {
 span {
     font-size:12px ;
     line-height: 20px;
+    font-weight: 500;
     color: #B5B5C3;
 }
 ul,li {
@@ -85,6 +86,9 @@ input {
 .pdr-10 {
     margin-right: 10px;
 }
+.gap-30 {
+    gap: 30px;
+}
 /* TEXT CSS */
 .grey-text {
     color:  #B5B5C3;
@@ -126,6 +130,22 @@ input {
 .bg-blue {
    background-color: #3699FF;
 }
+.bg-grey {
+    background-color: #EEE5FF;
+}
+.bg-light-khaki {
+    background-color: #FFF4DE;;
+}
+.bg-pink {
+    background-color: #F5FFCE;;
+}
+/* TEXT COLOR */
+.light-purple {
+    color: #8950FC;
+}
+.dark-yellow {
+    color: #FFA800;
+}
 .purple {
     color:#663259 ;
 }
@@ -150,22 +170,20 @@ input {
     line-height: 21px;
     color: #3F4254;
 }
-.section-heading-sub {
-    font-size: 12px;
-    color: #B5B5C3;
-}
 .common-section {
-    padding: 23px 30px;
+    padding: 23px 30px 32px;
     border-radius: 12px;
-    background-color: white;
 }
 /* ITEM CSS */
 .common-item-title {
     font-size: 14px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 21px;
 }
 .common-item-text {
     font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
     color: #B5B5C3;
 }
 /* BUTTON */
