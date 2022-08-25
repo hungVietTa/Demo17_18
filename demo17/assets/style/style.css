@@ -399,7 +399,7 @@ body {
 } 
 .new-arrivals-stats-price {
     margin-left: auto;
-    text-align:center;
+    text-align:right;
 } 
 .new-arrivals-status {
     width: 20%;
