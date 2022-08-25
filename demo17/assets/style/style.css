@@ -399,6 +399,7 @@ body {
 } 
 .new-arrivals-stats-price {
     margin-left: auto;
+    text-align:center;
 } 
 .new-arrivals-status {
     width: 20%;
