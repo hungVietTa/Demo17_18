@@ -6,6 +6,7 @@ body {
     width: 1500px;
     margin: auto;
     padding-left: 140px;
+    padding-bottom: 100px;
     background-color: #F9FAFB;
 }
 /* MAIN */
@@ -42,24 +43,23 @@ body {
 }
 .side-menu-nav {
     display: flex;
+    height: 100%;
+    gap: 17px;
     flex-direction: column;
     border-top: 2px solid #F9FAFB;
+    padding: 33px 0px;
 }
-.side-menu-nav a{
-    margin-top: 33px;
-}
-.side-menu-nav-link img {
-    width: 24.75px;
-}
-.side-menu-nav-link-rectangle {
+.side-menu-nav a {
     padding: 15px;
-    display: block;
+}
+.side-menu-nav a img {
+    width: 25px;
+}
+.side-menu-nav-rectangle {
     background-color: rgba(245, 248, 250,0.7);
 }
 .side-menu-nav-leave {
-    display: block;
     margin-top: auto;
-    margin-bottom: 40px;
 }
 /* HEADER */
 #header {
@@ -163,6 +163,7 @@ body {
     width: 49px;
     margin-right: 23px;
     flex-shrink: 0;
+    position: relative;
 }
 .time-line-section .section-heading-sub {
     font-size: 12px;
@@ -180,8 +181,11 @@ body {
     width: 20px;
 }
 .time-line-content {
-    padding-top: 14px;
+    padding: 14px 20px 0px 0px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }
 .time-line-content::before {
     content: "";
@@ -190,9 +194,23 @@ body {
     background-color: #B5B5C3;
     top: calc(10.5px + 6.5px + 5px);
     left: calc(49px + 6.5px);
-    transform: translateX(50%);
+    transform: translateX(-50%);
     bottom: 2px;
     border-radius: 8px;
+}
+.time-line-mark::before {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-width: 3px;
+    border-style: solid;
+    top: 10.5px;
+    background-color: white;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    right: -13px;
+    box-shadow: 0 0 2px 4px white;
 }
 .time-line-event {
     width: 100%;
@@ -203,9 +221,23 @@ body {
     font-weight: 600;
 }
 .time-line-text {
+    width: 254px;
+    flex-shrink: 0;
+    color: #7E8299;;
     font-size: 12px;
     line-height:20px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.time-line-p-common {
+    font-weight: 600;
+    font-size: 13px  !important;
+    line-height: 20px;
+}
+.time-line-p-common span {
+    font-size: 13px;
 }
 .col-right {
     width: 710px;
