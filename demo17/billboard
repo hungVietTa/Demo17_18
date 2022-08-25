@@ -145,7 +145,7 @@
                     </section>
                 </div>
                 <div class="col-right">
-                    <section class="billboard-section" href="">
+                    <section class="billboard-section" style="background-image: url(assets/img/billboard2.png);" href="">
                         <h2>We are working <br> to boost lovely mood</h2>
                         <a class="billboard-link" href="#">
                             Create a Store
