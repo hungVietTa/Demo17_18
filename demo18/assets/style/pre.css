@@ -4,6 +4,11 @@
     --black-text:#212121;
     --grey-text:#B5B5C3;
 }
+input {
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+}
 .my-btn {
     outline: none;
     border: none;
@@ -20,8 +25,92 @@
 }
 a {
     text-decoration: none;
+    transition: transform linear 0.2s;
 }
+/* BACKGROUND COLOR */
+.bg-purple {
+    background-color:#663259 ;
+}
+.bg-green {
+    background-color: #B0DC00;
+}
+.bg-pink {
+    background-color: #F64E60;
+}
+.bg-blue {
+   background-color: #3699FF;
+}
+.bg-approved {
+    background-color: #EEE5FF;
+}
+.bg-inprogress {
+    background-color: #FFF4DE;;
+}
+.bg-pink {
+    background-color: #F5FFCE;;
+}
+.bg-success {
+    background: #C9F7F5;
+}
+.bg-rejected {
+    background-color: #FFE2E5;
+}
+/* TEXT COLOR */
+.light-purple {
+    color: #8950FC;
+}
+.inprogress {
+    color: #FFA800;
+}
+.approved {
+    color:#663259 ;
+}
+.green {
+    color: #B0DC00;
+}
+.pink {
+    color: #F64E60;
+}
+.blue {
+   color: #3699FF;
+}
+.success {
+    color: #1BC5BD;
+} 
+.rejected {
+    color: #F64E60;
+}
+/* BUTTON */
 button {
     font-family: "Poppins";
     font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: transform linear 0.2s;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+.primary-button-group {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button-group button {
+    cursor: pointer;
+    padding: 8px 15px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B5B5C3;
+    border-radius: 12px;
+}
+.primary-button-group button:hover {
+    transform: scale(1.1);
+}
+
+.primary-button-group button.active {
+    background-color: #464E5F;
+    color: white;
 }

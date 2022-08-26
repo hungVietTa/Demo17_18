@@ -20,6 +20,10 @@ a {
 }
 a:hover {
     text-decoration: none;
+    transform: scale(1.2);
+}
+a {
+    transition: transform linear 0.2s;
 }
 span {
     font-size:12px ;
