@@ -1,0 +1,14 @@
+@media (min-width: 1400px) {
+.container-xxl {
+    max-width: 1500px;
+}
+.col-xxl-2-4 {
+    width: 20%;
+}
+.col-xxl-7-9 {
+    width: 66.15%;
+}
+.col-xxl-4-1 {
+    width: 33.85%;
+}
+}
